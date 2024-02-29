@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
 
             if(nombre.text.toString().isEmpty()|| valoracion.text.toString().isEmpty()){
-                Toast.makeText(this@MainActivity,"Rellena todos los campos",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity,"RELLENA TODOS LOS CAMPOS",Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 

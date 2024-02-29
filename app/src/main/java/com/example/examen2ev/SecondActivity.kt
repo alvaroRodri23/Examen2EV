@@ -37,7 +37,7 @@ class SecondActivity : AppCompatActivity() {
         continuar2.setOnClickListener {
 
             if(empresa.text.toString().isEmpty()|| anio.text.toString().isEmpty()){
-                Toast.makeText(this@SecondActivity,"Rellena todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@SecondActivity,"RELLENA TODOS LOS CAMPOS", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 
