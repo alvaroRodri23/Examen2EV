@@ -10,7 +10,7 @@ import android.widget.TextView
 private lateinit var lista: TextView
 private lateinit var atras: Button
 private lateinit var db: Juegos
-private lateinit var videojuego: Videojuego
+
 
 class SaveActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class SaveActivity : AppCompatActivity() {
         db= Juegos(this)
 
 
-        videojuego= Videojuego("", 1F,"",0)
+
         lista = findViewById(R.id.textolista)
         atras = findViewById(R.id.atras)
 
