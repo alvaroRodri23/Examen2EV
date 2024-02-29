@@ -27,7 +27,7 @@ class SaveActivity : AppCompatActivity() {
 
         val listaJuegos = db.lectura()
         listaJuegos.joinToString("\n"){
-            "nombre:{${videojuego.getNombre()}}"
+            "{${videojuego.toString()}}"
         }
 
 

@@ -37,7 +37,6 @@ class ThirdActivity : AppCompatActivity() {
 
 
         guardar.setOnClickListener {
-
             intent= Intent(this,SaveActivity::class.java).apply{
 
             }

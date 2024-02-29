@@ -47,7 +47,7 @@ class Juegos(context: Context) : SQLiteOpenHelper(context, DATABASE, null, DATAB
         onCreate(db)
     }
 
-    fun escribir(videojuego: Videojuego):Long {
+    fun escribir(videojuego: Videojuego){
         val db = this.writableDatabase
         val values = ContentValues().apply {
             put(COLUMN_NAME, videojuego.getNombre())
@@ -55,9 +55,8 @@ class Juegos(context: Context) : SQLiteOpenHelper(context, DATABASE, null, DATAB
             put(COLUMN_EMPRESA, videojuego.getEmpresa())
             put(COLUMN_ANIO, videojuego.getAnio())
         }
-        val id= db.insert(TABLA_JUEGOS, null, values)
+        db.insert(TABLA_JUEGOS, null, values)
         db.close()
-        return id
     }
 
 
