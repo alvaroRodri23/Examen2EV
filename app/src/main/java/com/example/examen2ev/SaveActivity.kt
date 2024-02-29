@@ -26,9 +26,8 @@ class SaveActivity : AppCompatActivity() {
         atras = findViewById(R.id.atras)
 
         val listaJuegos = db.lectura()
-        listaJuegos.joinToString("\n"){
-            "{${videojuego.toString()}}"
-        }
+        lista.text= listaJuegos.toString()
+        listaJuegos.joinToString("\n")
 
 
 

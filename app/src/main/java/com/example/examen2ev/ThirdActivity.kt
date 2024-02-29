@@ -48,7 +48,7 @@ class ThirdActivity : AppCompatActivity() {
 
         atras.setOnClickListener {
 
-            intent= Intent(this,MainActivity::class.java)
+            intent= Intent(this,SecondActivity::class.java)
 
             startActivity(intent)
         }
